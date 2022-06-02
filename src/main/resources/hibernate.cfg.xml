@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 	
 
 <hibernate-configuration>
 	<session-factory>
 	
-   		<property name="connection.url">jdbc:postgresql://localhost/Sportswear</property> <!-- BD Mane -->
+   		<property name="connection.url">jdbc:postgresql://localhost:5432/magicphone</property> <!-- BD Mane -->
+                <!--<property name="connection.url">jdbc:postgresql://localhost:5432/MagicPhone</property> -->
    		<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
    		<property name="connection.username">postgres</property> <!-- DB User -->
    		<property name="connection.password">leonel92</property> <!-- DB Password -->
@@ -18,7 +20,7 @@
 		<property name="show_sql">true</property> <!-- Show SQL in console -->
 		<property name="format_sql">true</property> <!-- Show SQL formatted -->
 		
-		<mapping class="com.sport.mx.entity.Usuario"/>
+		<mapping class="entity.Usuarios"/>
 		
 	</session-factory>
 </hibernate-configuration>
